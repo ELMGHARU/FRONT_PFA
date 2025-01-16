@@ -1,0 +1,167 @@
+/* Style général du conteneur */
+.auth-container {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem auto;
+  }
+  
+  /* Styles du titre */
+  .auth-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Styles du sous-titre */
+  .auth-subtitle {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 3rem;
+  }
+  
+  /* Container des méthodes d'authentification */
+  .auth-methods {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Style individuel des méthodes */
+  .auth-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border: 3px solid #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 250px;
+  }
+  
+  /* Hover sur les méthodes */
+  .auth-method:hover {
+    border-color: #007bff;
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+  }
+  
+  /* Style de la méthode sélectionnée */
+  .auth-method.selected {
+    border-color: #007bff;
+    background-color: #e7f5ff;
+  }
+  
+  /* Style de l'icône */
+  .method-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style du texte sous l'icône */
+  .auth-method span {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  /* Section du champ email */
+  .email-input-section {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  /* Style du champ email */
+  .email-input {
+    width: 100%;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .email-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  }
+  
+  /* Style d'erreur pour le champ email */
+  .email-input.error {
+    border-color: #dc3545;
+  }
+  
+  /* Message d'erreur */
+  .error-message {
+    color: #dc3545;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  
+  /* Bouton de confirmation */
+  .auth-confirm-button {
+    width: 100%;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+  }
+  
+  .auth-confirm-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+  }
+  
+  .auth-confirm-button:disabled {
+    background-color: #b3d7ff;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* Style pour le message de succès */
+  .success-message {
+    color: #28a745;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Media queries pour la responsivité */
+  @media (max-width: 768px) {
+    .auth-container {
+      padding: 2rem;
+      margin: 1rem;
+    }
+  
+    .auth-methods {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .auth-method {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .auth-title {
+      font-size: 2rem;
+    }
+  
+    .auth-subtitle {
+      font-size: 1.25rem;
+    }
+  }
